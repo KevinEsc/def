@@ -1,0 +1,117 @@
+/* Paleta de colores con variables CSS */
+:root {
+    --color-fondo: #976841;
+    --color-texto: #FFFFFF;
+    --color-enlace: #6A452C;
+    --color-enlace-hover: #ae794b;
+    --color-footer: #ae794b;
+    --color-hover-activo: #000000;
+}
+
+/* Tipografía y fondo */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Transiciones generales para interactividad */
+a, .btn-primary, .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-enlace);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-enlace-hover);
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: var(--color-enlace);
+    border-color: var(--color-enlace);
+    color: var(--color-texto);
+}
+.btn-primary:hover {
+    background-color: var(--color-enlace-hover);
+    border-color: var(--color-enlace-hover);
+    color: var(--color-texto);
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--color-enlace) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-texto) !important;
+}
+.nav-link.active {
+    color: var(--color-hover-activo) !important;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    color: var(--color-hover-activo) !important;
+}
+
+/* Sección bienvenida y textos */
+.bienvenida-section,
+.seccion-bienvenida {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 15px;
+    font-size: 18px;
+}
+.bienvenida-section h2 {
+    color: var(--color-texto);
+    margin-bottom: 20px;
+}
+.bienvenida-section img {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Imágenes de galería */
+.image-card {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Formulario */
+.form-control {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: var(--color-enlace);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.texto {
+    word-wrap: break-word;
+}
